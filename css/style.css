@@ -54,7 +54,7 @@ header {
     background-image: url('../imagens/background.png');
     background-repeat: no-repeat;
     background-size: cover;
-    min-width: 1024px;
+    max-width: 1024px;
     height: 500px;
     box-sizing: border-box;
 }
