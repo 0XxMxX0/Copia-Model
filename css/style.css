@@ -10,18 +10,17 @@ body{
 }
 
 #container {
-    /* background-color: red; */
     box-sizing: border-box;
     margin: auto;
-    max-width: 1024px;
+    width: 1024px;
     height: 2800px;
 }
 
+/* ------ HEADER ----- */
 header {
     position: relative;
-    background-color: blue;
-    background-image: url("../imagens/background.png");
-    background-size: 1130px;
+    background-image: url("../imagens/background-header.png");
+    background-size: 1024px;
     box-sizing: border-box;
     text-align: right;
     padding: 10px;
@@ -38,8 +37,14 @@ header {
     margin-right: 8.5px;
     font-weight: bold;
 }
+#nav-bar a:hover {
+    color: #00AEEF;
+}
 #nav-bar .white {
     color: #F1F1F1;
+}
+#nav-bar .white:hover {
+    color: #474647;
 }
 #logo {
     position: absolute;
@@ -247,9 +252,13 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
+#button:hover {
+    background-color: #076e93;
+}
 #button a {
     position: relative;
     top: 12px;
+    padding: 10px 80px 10px 80px;
     text-decoration: none;
     color: #F1F1F1;
     font-weight: bold;
@@ -335,6 +344,9 @@ input[type="submit"]{
     border: none;
     background-color: #EA0E8B;
 }
+input[type="submit"]:hover{
+    background-color: #8e0c56;
+}
 form textarea {
     width: 100%;
     height: 100px;
@@ -393,4 +405,11 @@ form textarea {
 }
 .icon2 {
     top: 15px;
+}
+
+@media screen  and (max-width: 1019px){
+    header {
+        /* background-size: 1110px; */
+       
+    }
 }
